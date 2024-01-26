@@ -1,0 +1,39 @@
+.nav {
+  position: absolute;
+  z-index: 9;
+  margin: 30px auto;
+}
+.nav__content {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 120px;
+}
+.nav__content a {
+  text-decoration: none;
+  color: var(--text-color, #252b42);
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+}
+.nav__list {
+  list-style: none;
+  gap: 21px;
+  display: flex;
+  flex-direction: row;
+}
+.nav__list-item a {
+  text-decoration: none;
+  color: var(--second-text-color, #737373);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  transition: all 0.3s ease;
+  &:hover {
+    color: orange;
+  }
+}
+

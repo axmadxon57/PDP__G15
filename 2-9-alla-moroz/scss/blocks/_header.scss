@@ -1,0 +1,35 @@
+.head {
+  background: #8f0365;
+}
+.header {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  // justify-content: center;
+}
+.header__content {
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 115px;
+}
+.header__content span {
+  color: #dbdbdb;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+}
+.language {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 600;
+}
+.header__list {
+  list-style: none;
+  text-align: center;
+  gap: 50px;
+  display: flex;
+}
+

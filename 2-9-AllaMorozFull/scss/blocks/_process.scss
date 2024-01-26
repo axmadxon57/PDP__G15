@@ -1,0 +1,38 @@
+.process {
+  background-image: url(/images/bg_process.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: calc(50vw);
+}
+.process__title {
+  display: flex;
+  justify-content: space-between;
+  margin: 135px 0 160px;
+}
+.process__title img {
+  width: 40%;
+  box-shadow: 1px 1px 30px;
+}
+.process__content {
+  margin-bottom: 25px;
+}
+.process__content h2 {
+  width: 650px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 3.3px;
+}
+.process__content p {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  width: 680px;
+}

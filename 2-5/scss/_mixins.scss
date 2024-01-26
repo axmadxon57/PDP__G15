@@ -1,0 +1,52 @@
+// $oq:white;
+
+@mixin btnPrimary($bg: black, $color: pink) {
+  text-decoration: none;
+  font-size: 22px;
+  background-color: $bg;
+  color: $color;
+  // color: $oq;
+  padding: 15px 30px;
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid #000;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: $color;
+    color: $bg;
+  }
+}
+
+@mixin mobile() {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin tablet() {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin media($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin content {
+  font-size: 10px;
+  color: blue;
+  display: flex;
+  align-items: flex-start;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
+  margin: 20px;
+  &:hover {
+    color: red;
+    background-color: rgb(71, 71, 71);
+    padding: 7px;
+    border-radius: 20px;
+    max-width: 70px;
+  }
+
+}

@@ -1,0 +1,82 @@
+.hero {
+  background-image: url(/images/hero_bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+}
+.hero__content h2 {
+  color: var(--text-color, #252b42);
+  font-family: Montserrat;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  max-width: 490px;
+  margin: 120px 0 35px;
+}
+.hero__content p {
+  color: var(--second-text-color, #737373);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  max-width: 325px;
+}
+.hero__btns {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 35px 0 80px;
+}
+.hero__btns a {
+  text-decoration: none;
+}
+.hero__btn1 {
+  color: var(--light-text-color, #fff);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  padding: 10px 36px;
+  gap: 10px;
+  border-radius: 37px;
+  background: var(--primary-color, #ffa62b);
+  transition: all 0.3s ease;
+  align-items: center;
+  &:hover {
+    background-color: #3c3b3b;
+    color: #ffa62b;
+  }
+}
+.hero__btn2 {
+  color: var(--secondary-color-1, #00A0C1);
+text-align: center;
+
+/* btn-text */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; /* 200% */
+letter-spacing: 0.2px;
+display: flex;
+padding: 10px 36px;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+border-radius: 37px;
+border: 1px solid var(--secondary-color-1, #00A0C1);
+transition: all 0.3s ease;
+&:hover {
+  background-color: #00A0C1;
+  color: #fff;
+}
+}

@@ -1,0 +1,32 @@
+.nav {
+  background: #ffdcf5;
+}
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 50px 0;
+}
+.nav__list-item a {
+  text-decoration: none;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: normal;
+  transition: all 0.3s ease;
+  &:hover {
+    color: #d40597;
+  }
+}
+.nav__item a {
+  text-decoration: none;
+  color: #d40597;
+  font-family: Rochester;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

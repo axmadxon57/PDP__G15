@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Rochester&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nav {
+  background: #ffdcf5; 
+}
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+  padding: 68px 0;
+  align-items: center;
+}
+.nav__list-item {
+  list-style: none;
+}
+.nav__list-item a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #000;
+  font-size: 35px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.nav__list-item a:hover {
+  color: orange;
+}
+.alla {
+  list-style: none;
+}
+.alla a {
+  text-decoration: none;
+  color: #d40597;
+  font-family: "Rochester";
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+/* hero  */
+.hero {
+  background: #8f0366;
+}
+.nav__content {
+  padding-top: 210px;
+}
+.nav__content h2 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 95px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  max-width: 674px;
+}
+.nav__content p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 573px;
+  padding-bottom: 227px;
+}
+.nav__img {
+  width: 715px;
+  height: 640px;
+}
+/* end of hero  */

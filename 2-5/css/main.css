@@ -1,0 +1,71 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn__primary {
+  text-decoration: none;
+  font-size: 22px;
+  background-color: blue;
+  color: red;
+  padding: 15px 30px;
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid #000;
+  transition: all 0.3s ease;
+}
+.btn__primary:hover {
+  background-color: red;
+  color: blue;
+}
+@media (max-width: 767px) {
+  .btn__primary {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .btn__primary {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .btn__primary {
+    font-size: 22px;
+  }
+}
+
+.contact__btn {
+  text-decoration: none;
+  font-size: 22px;
+  background-color: black;
+  color: pink;
+  padding: 15px 30px;
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid #000;
+  transition: all 0.3s ease;
+}
+.contact__btn:hover {
+  background-color: pink;
+  color: black;
+}
+
+.content {
+  font-size: 10px;
+  color: blue;
+  display: flex;
+  align-items: flex-start;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
+  margin: 20px;
+}
+.content:hover {
+  color: red;
+  background-color: rgb(71, 71, 71);
+  padding: 7px;
+  border-radius: 20px;
+  max-width: 70px;
+}/*# sourceMappingURL=main.css.map */

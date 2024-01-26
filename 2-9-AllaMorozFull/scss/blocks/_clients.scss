@@ -1,0 +1,62 @@
+.clients {
+  background-image: url(/images/bg_clients.png), url(/images/bg_client.png);
+  background-repeat: no-repeat;
+  background-position: calc(50vw), left top;
+  background-size: contain;
+}
+.clients__wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+// .clients__wrapper img {
+//   display: flex;
+//   margin: 40px 0 100px;
+// }
+
+.clients__content h2 {
+  max-width: 450px;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 120px;
+}
+.clients__content span {
+  display: flex;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 400px;
+  margin: 50px 0 35px;
+}
+.clients__content p {
+  color: #000;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 50px;
+  max-width: 573px;
+}
+.btn__clients {
+  text-decoration: none;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.9px;
+  padding: 10px 25px;
+  border: 2px solid palevioletred;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  &:hover {
+    background: palevioletred;
+  }
+}

@@ -1,0 +1,74 @@
+.hero {
+  border: 2px solid red;
+}
+
+.hero__content {
+  padding: 215px 0 215px;
+
+  @include media () {
+    
+  color: white;
+  }
+}
+.hero__content span {
+  color: $brown;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 1px;
+
+  @include media () {
+    color: white;
+    display: block;
+    text-align: center;
+  }
+}
+
+.hero__content h2 {
+  color: $brown;
+  font-size: 50px;
+  margin: 50px 0 30px;
+  font-family: "Marriweather";
+  font-weight: 300;
+  line-height: 70px; /* 140% */
+  letter-spacing: -0.4px;
+  max-width: 380px;
+ }
+
+.hero__content p {
+  color: $lightB rown;
+  font-size: 22px;
+  max-width: 380px;
+  font-weight: 300;
+  line-height: 30.8px;
+}
+.scrollDownBtn {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/Scroll_Down.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-top: 48px;
+}
+.hero {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.hero__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(../images/hero_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  @include media ( ) {
+    width: 100%;
+    z-index: -1;
+  }
+}

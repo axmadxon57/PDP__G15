@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "Merriweather";
+  src: url("../webFonts/Merriweather-Italic.woff2") format("woff2"), url("../webFonts/Merriweather-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("../webFonts/Merriweather-BoldItalic.woff2") format("woff2"), url("../webFonts/Merriweather-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("../webFonts/Merriweather-BlackItalic.woff2") format("woff2"), url("../webFonts/Merriweather-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("../webFonts/Merriweather-Italic.woff2") format("woff2"), url("../webFonts/Merriweather-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("../webFonts/Merriweather-Light.woff2") format("woff2"), url("../webFonts/Merriweather-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("../webFonts/Merriweather-Black.woff2") format("woff2"), url("../webFonts/Merriweather-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Varta";
+  src: url("../webFonts/Varta-Bold.woff2") format("woff2"), url("../webFonts/Varta-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Varta";
+  src: url("../webFonts/Varta-SemiBold.woff2") format("woff2"), url("../webFonts/Varta-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("../webFonts/Merriweather-LightItalic.woff2") format("woff2"), url("../webFonts/Merriweather-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("../webFonts/Merriweather-Regular.woff2") format("woff2"), url("../webFonts/Merriweather-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Varta";
+  src: url("../webFonts/Varta-Medium.woff2") format("woff2"), url("../webFonts/Varta-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Varta";
+  src: url("../webFonts/Varta-Regular.woff2") format("woff2"), url("../webFonts/Varta-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Varta";
+  src: url("../webFonts/Varta-Light.woff2") format("woff2"), url("../webFonts/Varta-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "varta";
+  font-weight: 300;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  padding-top: 50px;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 25px;
+}
+@media screen and (min-width: 0) and (max-width: 1024px) {
+  .nav__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    justify-content: center;
+    background-color: aqua;
+    flex-direction: column;
+    transform: translateX(-100%);
+  }
+}
+
+.nav__list-item a {
+  text-decoration: none;
+  color: #706458;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+@media screen and (min-width: 0) and (max-width: 1024px) {
+  .message__icon {
+    display: none;
+  }
+}
+
+.nav__checkbox {
+  width: 24px;
+  height: 12px;
+  background-image: url(../../images/icon_bars.svg);
+  background-size: contain;
+  /* visibility: hidden; */
+}
+
+.hero {
+  border: 2px solid red;
+}
+
+.hero__content {
+  padding: 215px 0 215px;
+}
+@media screen and (min-width: 0) and (max-width: 1024px) {
+  .hero__content {
+    color: white;
+  }
+}
+
+.hero__content span {
+  color: #706458;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.hero__content h2 {
+  color: #706458;
+  font-size: 50px;
+  margin: 50px 0 30px;
+  font-family: "Marriweather";
+  font-weight: 300;
+  line-height: 70px; /* 140% */
+  letter-spacing: -0.4px;
+  max-width: 380px;
+}
+
+.hero__content p {
+  color: rgba(112, 100, 88, 0.9019607843);
+  font-size: 22px;
+  max-width: 380px;
+  font-weight: 300;
+  line-height: 30.8px;
+}
+
+.scrollDownBtn {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/Scroll_Down.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-top: 48px;
+}
+
+.hero {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.hero__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(../images/hero_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (max-width: 767px) {
+  .hero__bg {
+    width: 100%;
+    z-index: -1;
+  }
+}/*# sourceMappingURL=main.css.map */
